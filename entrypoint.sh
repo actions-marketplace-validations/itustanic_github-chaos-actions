@@ -7,9 +7,7 @@ TEST_TIMEOUT=$((600 + $TOTAL_CHAOS_DURATION))
 PARALLEL_EXECUTION=${PARALLEL_EXECUTION:=1}
 
 ##Extract the base64 encoded config data and write this to the KUBECONFIG
-mkdir -p ${HOME}/.kube
-echo "$KUBE_CONFIG_DATA" | base64 --decode > ${HOME}/.kube/config
-export KUBECONFIG=${HOME}/.kube/config
+
 
 ##Setup 
 mkdir -p $HOME/go/src/github.com/litmuschaos
