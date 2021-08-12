@@ -1,5 +1,5 @@
-name: 'Kubernetes Chaos'
-description: 'Different Chaos Experiment for Kubernetes'
+name: 'Ivo Testing Action'
+description: 'Testing Chaos Actions'
 runs:
   using: 'docker'
   image: 'Dockerfile'
